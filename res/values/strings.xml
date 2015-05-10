@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">LearningLog</string>
+	<string name="quiz_Activity_name">Quiz</string>
+	<string name="login_notification">Log in</string>
+	<string name="menu_title">menu</string>
+	<string name="myItem_title">My Learning Log</string>
+	<string name="my_objects_title">My Learning Log</string>
+	<string name="latest_objects_title">Latest Learning Log</string>
+	<string name="add_object_title">Add Learning Log Object</string>
+	<string name="error">error</string>
+	<string name="error_inner_info">There is an inner error.</string>
+	<string name="error_invali_username_password">Username or password is empty</string>
+	<string name="error_username_password">Username or password is not right</string>
+	<string name="error_setting">Please set your category, mother language, study
+		language in learning log system.</string>
+	<string name="error_no_category">Please set your category in learning log system.</string>
+	<string name="error_unable_access_server">Server can not be accessed. Please reset your
+		system address</string>
+	<string name="server_exception_occurred">Errors are occurred on the sever side</string>
+	<string name="quiz_answer_correct">Congratulations! Your answer is right!</string>
+	<string name="quiz_answer_wrong">Sorry! Your answer is not right! </string>
+	<string name="error_no_quiz">You have finished all the quizzes!</string>
+	<string name="copyright">Objects provided by LL System are under the
+		copyright of their owners.</string>
+	<string name="author">Author Name:</string>
+	<string name="map">Map:</string>
+	<string name="showinmap">Go to map</string>
+	<string name="lbl_item_comment">Description:</string>
+	<string name="LLQStateText">Take notes</string>
+	<string name="NavNotificationInfo">There are some LL objects around you!</string>
+<string name="navbutton">NAVIGATOR:data取得</string>
+
+	<string name="preference_title">Setting</string>
+	<string name="preference_system_setting">Learning Log Setting</string>
+	<string name="preference_background_time">Time based Recommendation</string>
+	<string name="preference_background_time_detail">System will recommend you some learning logs based
+		on current time.</string>
+	<string name="preference_background_location">Location based Recommendation</string>
+	<string name="preference_background_location_detail">System will recommend you some learning logs based
+		on your location.</string>
+	<string name="preference_auto_startup">Auto Start up</string>
+
+	<string name="user_id">User ID</string>
+	<string name="password">Password</string>
+	<string name="submit">Submit</string>
+	<string name="done">Done</string>
+	<string name="cancel">Cancel</string>
+	<string name="title">Title</string>
+	<string name="entitle">English Title</string>
+	<string name="jptitle">Japanese Title</string>
+	<string name="zhtitle">Chinese Title</string>
+	<string name="item_title_intranslate">Translating...</string>
+
+	<string name="menu_qa">Q &amp; A</string>
+
+	<string name="hint_title">Title</string>
+
+	<string name="item_category_label">Category</string>
+	<string name="item_share_label">Share Level</string>
+	<string name="item_photo_label">Select Photo</string>
+	<string name="item_save_label">save</string>
+	<string name="item_detail_label">detail</string>
+
+	<string name="notification_upload_ticker">Uploading Images ...</string>
+	<string name="notification_upload_title">PicUpload</string>
+	<string name="notification_upload_message">Uploading Images ...</string>
+
+	<string name="toast_upload_start">Start Uploading</string>
+	<string name="toast_upload_success">PicUpload: Upload Success</string>
+	<string name="toast_upload_nouser">PicUpload: username is not correct</string>
+
+	<string name="error_dialog_title">PicUpload: error</string>
+	<string name="error_post_fail">Failed to Post</string>
+	<string name="error_validate">ID or Password is not set</string>
+
+	<string name="lab_LLMap">Learning Log Map</string>
+
+	<string name="test">PasswordUsername</string>
+	<string name="add_item_title">Title</string>
+	<string name="add_item_comment">Description</string>
+	<string name="add_item_attached">Attachment</string>
+	<string name="add_item_notebook">NoteBook</string>
+	<string name="add_item_tag">Tag</string>
+	<string name="add_item_tags">Select Tag</string>
+	<string name="add_item_question">Question</string>
+	<string name="add_item_question_lang">Question Language</string>
+	<string name="info_require_gps">Your GPS seems to be disabled, do you want to
+		enable it?</string>
+
+	<string name="hint_question_content">Question</string>
+	<string name="hint_question_title">Title</string>
+
+	<string name="nav_app_name">Learning-Log Navigator</string>
+	<string name="Fast_Timer_Photo">1 Minute</string>
+	<string name="Short_Timer_Photo">5 Minutes</string>
+	<string name="Late_Timer_Photo">10 Minutes</string>
+
+	<string name="voice_record_prefix_start">Recording</string>
+	<string name="voice_record_prefix_stop">Stop</string>
+
+	<string name="info_select_category">Select a category</string>
+	<string name="info_txt_no_sd_card">No SD card is found</string>
+	<string name="info_audio_resource_is_using">Audio devices are used by other program</string>
+
+	<string name="oauth_pin_not_match">入力された数値を確認してください</string>
+	<string name="button_oauth_ok">認証</string>
+
+
+	<string name="description_category">Category</string>
+	<string name="description_category_tag">Category\uff06Tag</string>
+	<string name="description_camera">Camera</string>
+	<string name="description_mic">Microphone</string>
+	<string name="description_setting">Setting</string>
+	<string name="description_attach">Attachment</string>
+
+	<string name="title_now_playing">Now Playing</string>
+	<string name="title_schedule">Schedule</string>
+	<string name="title_sessions">Sessions</string>
+	<string name="title_starred">Starred</string>
+	<string name="title_tracks">Tracks</string>
+	<string name="title_vendors">Sandbox</string>
+	<string name="title_map">Map</string>
+	<string name="title_notes">Notes</string>
+	<string name="title_note_edit">Edit note</string>
+
+	<string name="title_session_tracks">Session tracks</string>
+	<string name="title_vendor_tracks">Sandbox tracks</string>
+
+	<string name="title_share">Share using</string>
+
+	<string name="title_search">Search</string>
+	<string name="title_search_query">
+		Search for \'
+		<xliff:g id="query">%1$s</xliff:g>
+		\'
+	</string>
+
+	<string name="btn_schedule">Schedule</string>
+	<string name="btn_map">Map</string>
+	<string name="btn_sessions">Sessions</string>
+	<string name="btn_starred">Starred</string>
+	<string name="btn_vendors">Sandbox</string>
+	<string name="btn_notes">My Notes</string>
+
+	<string name="toast_sync_error">
+		Sync error:
+		<xliff:g id="error">%1$s</xliff:g>
+	</string>
+
+	<string name="session_subtitle">
+		<xliff:g id="time">%1$s</xliff:g>
+		in
+		<xliff:g id="room">%2$s</xliff:g>
+	</string>
+	<string name="session_moderator_status">
+		<xliff:g id="questions">%1$s</xliff:g>
+		questions submitted and
+		<xliff:g id="votes">%2$s</xliff:g>
+		votes cast.
+	</string>
+
+
+	<string name="session_summary">Summary</string>
+	<string name="session_notes">Notes</string>
+	<string name="session_moderator">Moderator</string>
+	<string name="session_interact">Interact</string>
+	<string name="session_requirements">Requirements</string>
+	<string name="session_speakers">Speakers</string>
+
+	<string name="track_summary">Summary</string>
+	<string name="track_sessions">Sessions</string>
+	<string name="track_vendors">Sandbox</string>
+
+	<string name="search_sessions">Sessions</string>
+	<string name="search_vendors">Sandbox</string>
+
+	<string name="starred_sessions">Sessions</string>
+	<string name="starred_vendors">Sandbox</string>
+
+	<string name="search_hint">Session keywords</string>
+
+	<string name="share_template">
+		Checking out \'
+		<xliff:g id="title">%1$s</xliff:g>
+		\' at Google #io2010
+		<xliff:g id="hashtag">%2$s</xliff:g>
+	</string>
+	<string name="share_notes">Exported notes from Google I/O 2010</string>
+
+	<string name="moderator_header">Moderator</string>
+	<string name="moderator_summary">Use Moderator to ask questions during this session,
+		and vote up/down other questions.</string>
+	<string name="wave_header">Wave</string>
+	<string name="wave_summary">Use Wave to collaborate in real-time with others
+		during this session.</string>
+
+	<string name="dialog_moderator_title">Google Moderator</string>
+	<string name="dialog_moderator_message">The official Google Moderator app is available in
+		Market, would you like to install it or continue using a normal
+		browser?</string>
+
+	<string name="dialog_moderator_web">Use Browser</string>
+	<string name="dialog_moderator_market">Visit Market</string>
+
+	<string name="dialog_wave_title">Google Wave</string>
+	<string name="dialog_wave_message">The Google Wave mobile interface is still in beta,
+		and using a desktop or laptop is recommended for the best
+		experience.\n\nContinue to Google Wave anyway?</string>
+
+	<string name="speaker_template">
+		<xliff:g id="name">%1$s</xliff:g>
+		,
+		<xliff:g id="company">%2$s</xliff:g>
+	</string>
+
+	<string name="note_create">Create new note</string>
+	<string name="note_hint">Enter note</string>
+
+	<string name="note_discard_title">Discard note?</string>
+	<string name="note_discard_confirm">Are you sure you want to discard this note,
+		deleting any contents?</string>
+
+
+	<string name="txt_register">
+		<a href="http://ll.is.tokushima-u.ac.jp/learninglog/signup/sendmail">Create your account</a>
+	</string>
+
+	<string name="txt_forget">
+		<a href="http://ll.is.tokushima-u.ac.jp/learninglog/signup/resetpassword">Forgot password</a>
+	</string>
+	<string name="forget_password_url">
+		<a href="http://ll.is.tokushima-u.ac.jp/learninglog/signup/resetpassword">Forgot password</a>
+	</string>
+	<string name="txt_help">
+		<a href="http://ll.is.tokushima-u.ac.jp/learninglog/help">Help</a>
+	</string>
+	<string name="txt_system">
+		<a href="http://ll.is.tokushima-u.ac.jp">Learning Log</a>
+	</string>
+
+	<!-- <string name="description_export">Export</string> <string name="description_star">Star</string>
+		<plurals name="now_playing_countdown"> <item quantity="zero"><xliff:g id="remaining_time">%2$s</xliff:g></item>
+		<item quantity="one"><xliff:g id="number_of_days">%1$s</xliff:g> day, <xliff:g
+		id="remaining_time">%2$s</xliff:g></item> <item quantity="other"><xliff:g
+		id="number_of_days">%1$s</xliff:g> days, <xliff:g id="remaining_time">%2$s</xliff:g></item>
+		</plurals> -->
+
+	<!-- map key -->
+	<!-- <string name="map_key">0XYAZGN8E0Lya1w-t7LXS3wXnsd-3xathFixo9g</string>-->
+	<string name="map_key">0oBuwKtIY8l-mIIatpsFZMGSBW_3gupvfFC1NpQ</string>
+
+	<!-- dialog question -->
+	<string name="info_select_language">Language</string>
+	<string name="alert_dialog_ok">OK</string>
+	<string name="alert_dialog_cancel">Cancel</string>
+	<string name="alert_dialog_reset">Reset</string>
+
+	<!-- title bar -->
+	<string name="description_home">Home</string>
+	<string name="description_search">Search</string>
+	<string name="description_map">Map</string>
+	<string name="description_refresh">Refresh</string>
+	<string name="description_share">Share</string>
+	<string name="description_edit">Edit</string>
+	<string name="description_delete">Delete</string>
+	<string name="description_compass">Navigator</string>
+	<string name="description_question">Question</string>
+
+	<!-- Progress Dialog Info -->
+	<string name="progress_bar_title">Waiting...</string>
+	<string name="progress_bar_message">Loading...</string>
+
+	<!-- NewLogActivity -->
+	<string name="dialog_attach_option_title">Attachment</string>
+	<string name="dialog_attach_option_btn_delete">Delete</string>
+	<string name="dialog_attach_option_btn_view">View</string>
+	<string name="dialog_attach_option_btn_back">Back</string>
+	<string name="log_edit_comment">Description</string>
+	<string name="log_place_comment">Place</string>
+	<string name="log_edit_btn_save">Save</string>
+	<string name="log_edit_btn_discard">Discard</string>
+	<string name="info_titles_empty">Please input at least one title</string>
+	<string name="info_upload_failure">Upload Failure</string>
+	<string name="info_upload_success">Upload Success</string>
+	<string name="item_share_public">PUBLIC</string>
+	<string name="item_share_private">PRIVATE</string>
+
+	<!-- View Log Activity -->
+	<string name="dialog_log_delete">Do you want to delete this object?</string>
+	<string name="info_delete_failure">Delete Failure</string>
+	<string name="info_delete_success">Delete Success</string>
+
+	<!-- QestionActivity -->
+	<string name="log_edit_question">Question</string>
+
+	<!-- search dialog -->
+	<string name="dialog_search_hint">Search By Title or Nickname</string>
+	<string name="dialog_search_description">All Learning Logs</string>
+	<string name="dialog_search_label">Learning Log</string>
+
+	<!-- QuizActivity  -->
+	<string name="info_empty_quiz">The system is synchronizing. Please wait for a moment.</string>
+	<string name="quiz_answer_label">Answer</string>
+	<string name="quiz_more_label">More Quizzes</string>
+	<string name="quiz_pass_label">No Good</string>
+	<string name="quiz_Yes_label">Yes</string>
+	<string name="quiz_No_label">No</string>
+	<string name="quiz_too_easy_label">Too Easy</string>
+	<string name="quiz_too_difficult_label">Too Difficult</string>
+
+
+	<!-- Learning Log List -->
+	<string name="info_empty_logs">No Logs</string>
+	<string name="info_searching_logs">Searching</string>
+	<string name="info_loading_logs">Loading</string>
+
+	<!-- Context Aware Service -->
+	<string name="Notify_Info_Context_Quiz">A quiz near you is found!</string>
+	<string name="ReminderQuizNotificationInfo">There is a reminder quiz for you!</string>
+	<string name="Notify_Info_Context_Logs">There are some learning logs surround you!</string>
+	<string name="Notify_Info_Location_Quiz">Now you are in your preferred study location at proper time. Are you ready?</string>
+	<string name="Notify_Info_Setting_Quiz">It is the time for you set to learn. Come on!</string>
+
+	<!-- preferences setting -->
+	<string name="setting_location_prefer_key">setting_prefer_location_alarm</string>
+	<string name="setting_time_prefer_key">setting_prefer_time_alarm</string>
+
+
+	<!-- alert dialog question -->
+	<string name="btn_question_ok">OK</string>
+	<string name="btn_question_cancel">Cancel</string>
+	<string name="txt_question_language">Category</string>
+
+	<!-- 一覧画面
+	<string name="sound_recorder">録音する</string>
+	<string name="photo_recorder">写真を撮る</string>
+	<string name="video_recorder">動画を撮る</string>
+	<string name="btn_select">選択する</string>
+	<string name="btn_delete">削除する</string>
+ 	-->
+	<!-- ファイルの削除
+	<string name="file_delete">削除確認</string>
+	<string name="delete_confirm">削除してよろしいでしょうか?</string>
+	<string name="delete_success">削除しました。</string>
+	<string name="delete_fail">削除できませんでした。</string>
+	 -->
+	<!-- 音声 -->
+	<string name="btn_pause">一時停止</string>
+	<string name="btn_resume">再開</string>
+	<string name="txt_playtime_start">00:00</string>
+	<string name="txt_recording">録音中</string>
+	<string name="txt_playtime_prefix_on">再生中</string>
+	<string name="txt_playtime_prefix_off">停止</string>
+	<string name="txt_voice_record_prefix_start">録音中</string>
+	<string name="txt_voice_record_prefix_stop">停止</string>
+	<string name="txt_no_sd_card">メモリーカードがありません</string>
+	<string name="info_voice_record_error">例外が発生したため、録音を開始できません。</string>
+	<string name="lbl_audio_player">Audio Player</string>
+	<string name="lbl_audio_record">Audio Recorder</string>
+	<string name="lbl_photo_player">Photo Player</string>
+	<string name="lbl_photo_record">Photography</string>
+	<string name="lbl_video_player">Video Player</string>
+	<string name="lbl_video_record">Video Recorder</string>
+	<string name="info_sound_file_saved">音声保存しました。</string>
+
+	<!-- 動画 -->
+	<string name="startButtonText">開始</string>
+	<string name="stopButtonText">終了</string>
+	<string name="info_video_record_start">録画</string>
+	<string name="info_video_record_stop">停止</string>
+	<string name="info_video_file_saved">映像保存しました。</string>
+	<string name="error_info_audio_resource_is_using">マイクは、別のプログラムに使用されています。</string>
+	<string name="error_info_video_recoring_starting">例外が発生したため、撮影を開始できません。</string>
+	<string name="error_info_video_recoring_stoping">例外が発生したため、撮影を終了します。</string>
+
+	<!-- 写真 -->
+	<string name="info_photo_file_saved">写真保存しました。</string>
+
+	<!-- リスト -->
+	<string name="info_no_item_selected">ファイルを選択して下さい</string>
+	<string name="title_audio_list">Audio</string>
+	<string name="title_photo_list">Photo</string>
+	<string name="title_video_list">Video</string>
+
+	<!-- 動画サイズ -->
+	<!-- integer name="video_size_width">640</integer> <integer name="video_size_height">480</integer -->
+	<integer name="video_size_width">1280</integer>
+	<integer name="video_size_height">720</integer>
+
+	<!-- 動画ビットレート -->
+	<!-- integer name="video_bitrate">360000</integer -->
+	<integer name="video_bitrate">6000000</integer>
+	<integer name="audio_bitrate">23450</integer>
+
+	<!-- ファイル保存ディレクトリ -->
+	<string name="system_audio_path">/sdcard/DCIM/sound/</string>
+	<string name="system_photo_path">/sdcard/DCIM/Camera/</string>
+	<string name="system_video_path">/sdcard/DCIM/Camera/</string>
+
+	<!-- 機種識別番号(Xperia) -->
+	<string-array name="cameraButtonPhoneIDs">
+		<item>SO-01B</item>
+	</string-array>
+
+	<string name="forward_seconds">5</string>
+
+	<array name="fileEndingImage">
+		<item>.png</item>
+		<item>.gif</item>
+		<item>.jpg</item>
+		<item>.jpeg</item>
+		<item>.bmp</item>
+	</array>
+	<array name="fileEndingAudio">
+		<item>.mp3</item>
+		<item>.wav</item>
+		<item>.ogg</item>
+		<item>.midi</item>
+		<item>.wma</item>
+		<item>.raw</item>
+		<item>.m4a</item>
+		<item>.aac</item>
+		<item>.3gp</item>
+	</array>
+	<array name="fileEndingVideo">
+		<item>.mp4</item>
+		<item>.rm</item>
+		<item>.mpg</item>
+		<item>.avi</item>
+		<item>.mpeg</item>
+		<item>.3gp</item>
+		<item>.3gpp</item>
+	</array>
+<!-->
+QRコード追加button_google_shopper
+<-->
+<string name="app_picker_name">Applications</string>
+  <string name="bookmark_picker_name">Bookmarks</string>
+  <string name="button_add_calendar">Add to calendar</string>
+  <string name="button_add_contact">Add contact</string>
+  <string name="button_back">Back</string>
+  <string name="button_book_search">Book Search</string>
+  <string name="button_cancel">Cancel</string>
+  <string name="button_clipboard_empty">Clipboard empty</string>
+  <string name="button_custom_product_search">Custom search</string>
+  <string name="button_dial">Dial number</string>
+  <string name="button_done">Done</string>
+  <string name="button_email">Send email</string>
+  <string name="button_get_directions">Get directions</string>
+  <string name="button_google_shopper">Google Shopper</string>
+  <string name="button_mms">Send MMS</string>
+  <string name="button_ok">OK</string>
+  <string name="button_open_browser">Open browser</string>
+  <string name="button_product_search">Product Search</string>
+  <string name="button_read_book">Browse book</string>
+  <string name="button_search_book_contents">Search contents</string>
+  <string name="button_share_app">Application</string>
+  <string name="button_share_bookmark">Bookmark</string>
+  <string name="button_share_by_email">Share via email</string>
+  <string name="button_share_by_sms">Share via SMS</string>
+  <string name="button_share_clipboard">Clipboard</string>
+  <string name="button_share_contact">Contact</string>
+  <string name="button_show_map">Show map</string>
+  <string name="button_sms">Send SMS</string>
+  <string name="button_web_search">Web search</string>
+  <string name="button_wifi">Connect to Network</string>
+  <string name="contents_contact">Contact info</string>
+  <string name="contents_email">Email address</string>
+  <string name="contents_location">Geographic coordinates</string>
+  <string name="contents_phone">Phone number</string>
+  <string name="contents_sms">SMS address</string>
+  <string name="contents_text">Plain text</string>
+  <string name="history_clear_text">Clear history</string>
+  <string name="history_email_title">Barcode Scanner history</string>
+  <string name="history_send">Send history</string>
+  <string name="history_title">History</string>
+  <string name="menu_about">About</string>
+  <string name="menu_help">Help</string>
+  <string name="menu_history">History</string>
+  <string name="menu_settings">Settings</string>
+  <string name="menu_share">Share</string>
+  <string name="msg_about">The official Android app of the open source ZXing barcode project.</string>
+  <string name="msg_buggy">This device has known bugs that cause barcode scanning problems. For more information, visit http://code.google.com/p/zxing/wiki/FrequentlyAskedQuestions</string>
+  <string name="msg_bulk_mode_scanned">Bulk mode: barcode scanned and saved</string>
+  <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+  <string name="msg_default_contents">Contents</string>
+  <string name="msg_default_format">Format</string>
+  <string name="msg_default_meta">Metadata</string>
+  <string name="msg_default_mms_subject">Hi</string>
+  <string name="msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
+  <string name="msg_default_time">Time</string>
+  <string name="msg_default_type">Type</string>
+  <string name="msg_encode_barcode_failed">Could not generate the requested barcode.</string>
+  <string name="msg_encode_contents_failed">Could not encode a barcode from the data provided.</string>
+  <string name="msg_google_shopper_missing">Google Shopper is not installed</string>
+  <string name="msg_install_google_shopper">Google Shopper combines barcode scanning with online and local prices, reviews and more without opening the browser. Would you like to try it?</string>
+  <string name="msg_intent_failed">Sorry, the requested application could not be launched. The barcode contents may be invalid.</string>
+  <string name="msg_loading_apps">Loading list of applications\u2026</string>
+  <string name="msg_not_our_results">You are leaving this application. The search results you will see are not related to this application.</string>
+  <string name="msg_redirect">Redirect</string>
+  <string name="msg_sbc_book_not_searchable">Sorry, this book is not searchable.</string>
+  <string name="msg_sbc_failed">Sorry, the search encountered a problem.</string>
+  <string name="msg_sbc_no_page_returned">No page returned</string>
+  <string name="msg_sbc_page">Page</string>
+  <string name="msg_sbc_searching_book">Searching book\u2026</string>
+  <string name="msg_sbc_snippet_unavailable">Snippet not available</string>
+  <string name="msg_sbc_unknown_page">Unknown page</string>
+  <string name="msg_share_explanation">You can share data by displaying a barcode on your screen and scanning it with another phone.</string>
+  <string name="msg_share_subject_line">Here are the contents of a barcode I scanned</string>
+  <string name="msg_share_text">Or type some text and press Enter</string>
+  <string name="msg_unmount_usb">Sorry, the SD card is not accessible.</string>
+  <string name="preferences_actions_title">When a barcode is found\u2026</string>
+  <string name="preferences_bulk_mode_summary">Scan and save many barcodes continuously</string>
+  <string name="preferences_bulk_mode_title">Bulk scan mode</string>
+  <string name="preferences_copy_to_clipboard_title">Copy to clipboard</string>
+  <string name="preferences_custom_product_search_summary" formatted="false">Use %s as a placeholder for the product ID, and %f for format</string>
+  <string name="preferences_custom_product_search_title">Custom search URL</string>
+  <string name="preferences_decode_1D_title">1D barcodes</string>
+  <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+  <string name="preferences_decode_QR_title">QR Codes</string>
+  <string name="preferences_front_light_summary">Improves scanning in low light on some phones, but may cause glare. Does not work on all phones.</string>
+  <string name="preferences_front_light_title">Use front light</string>
+  <string name="preferences_general_title">General settings</string>
+  <string name="preferences_name">Settings</string>
+  <string name="preferences_play_beep_title">Beep</string>
+  <string name="preferences_remember_duplicates_summary">Store multiple scans of the same barcode in History</string>
+  <string name="preferences_remember_duplicates_title">Remember duplicates</string>
+  <string name="preferences_reverse_image_summary">Enable on devices with a front camera only</string>
+  <string name="preferences_reverse_image_title">Reversed camera image</string>
+  <string name="preferences_result_title">Result settings</string>
+  <string name="preferences_scanning_title">When scanning for barcodes, decode\u2026</string>
+  <string name="preferences_supplemental_summary">Try to retrieve more information about the barcode contents</string>
+  <string name="preferences_supplemental_title">Retrieve more info</string>
+  <string name="preferences_vibrate_title">Vibrate</string>
+  <string name="result_address_book">Found contact info</string>
+  <string name="result_calendar">Found calendar event</string>
+  <string name="result_email_address">Found email address</string>
+  <string name="result_geo">Found geographic coordinates</string>
+  <string name="result_isbn">Found book</string>
+  <string name="result_product">Found product</string>
+  <string name="result_sms">Found SMS address</string>
+  <string name="result_tel">Found phone number</string>
+  <string name="result_text">Found plain text</string>
+  <string name="result_uri">Found URL</string>
+  <string name="result_wifi">Found WLAN Configuration</string>
+  <string name="sbc_name">Google Book Search</string>
+  <string name="share_name">Share via barcode</string>
+  <string name="title_about">Barcode Scanner v</string>
+  <string name="wa_name">WLAN Connection</string>
+  <string name="wifi_changing_network">Changing Network</string>
+  <string name="wifi_connected">Connected</string>
+  <string name="wifi_creating_network">Creating Network</string>
+  <string name="wifi_modifying_network">Modifying Network</string>
+  <string name="wifi_ssid_missing">Network name missing</string>
+  <string name="wifi_type_incorrect">Network type incorrect</string>
+  <string name="wifi_connect_failed">Network connection failed</string>
+  <string name="wifi_ssid_label">Network Name</string>
+  <string name="wifi_type_label">Type</string>
+  <string name="zxing_url">http://code.google.com/p/zxing</string>
+
+    <string name="spinner_title">How was difficulty?</string>
+    
+    <string-array name="spinner_difficulty_order">
+        <item>-- How was difficulty? --</item>
+        <item>Too easy!</item>
+        <item>Too difficult!</item>
+        <item>No good...</item>
+    </string-array>
+  
+
+</resources>

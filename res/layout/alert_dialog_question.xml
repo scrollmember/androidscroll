@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"
+		android:layout_marginTop="10dip" android:gravity="center_vertical">
+		<TextView android:text="@string/txt_question_language"
+			android:layout_width="wrap_content" android:gravity="center"
+			android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" />
+		<Spinner android:id="@+id/spn_language" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:drawSelectorOnTop="true"
+			android:prompt="@string/info_select_language"
+			android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+			android:gravity="center" android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_weight="1" />
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:layout_marginLeft="5dip" android:layout_marginRight="5dip"
+		android:layout_marginTop="5dip">
+		<EditText android:layout_height="fill_parent" android:id="@+id/txt_question_content"
+			android:layout_width="wrap_content" android:layout_weight="1"
+			android:gravity="top|left" android:minLines="10"></EditText>
+	</LinearLayout>
+</LinearLayout>

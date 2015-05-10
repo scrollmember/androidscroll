@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 選択ON -->
+    <item android:state_selected="true"><shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <stroke android:width="10dp" android:color="#ccffff00" />
+
+            <padding android:bottom="8dp" android:left="8dp" android:right="8dp" android:top="8dp" />
+            <color android:color="#00ffffff" />
+        </shape></item>
+
+    <!-- 通常時 -->
+    <item 
+        android:drawable="@android:color/transparent"></item>
+
+</selector>

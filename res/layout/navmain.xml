@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/white"
+	>
+	<LinearLayout style="@style/TitleBar">
+		<ImageButton style="@style/TitleBarAction"
+			android:contentDescription="@string/description_home" android:src="@drawable/ic_title_home"
+			android:onClick="onHomeClick" />
+
+		<ImageView style="@style/TitleBarSeparator" />
+		<TextView style="@style/TitleBarText" />
+
+		<ImageView style="@style/TitleBarSeparator" />
+		<ImageButton style="@style/TitleBarAction"
+			android:contentDescription="@string/description_search" android:src="@drawable/ic_title_search"
+			android:onClick="onSearchClick" />
+<!--  
+		<ImageView style="@style/TitleBarSeparator" />
+		<ImageButton style="@style/TitleBarAction"
+			android:contentDescription="@string/description_map" android:src="@drawable/ic_title_map"
+			android:onClick="onMapClick" android:visibility="visible" />-->
+	</LinearLayout>
+	
+<LinearLayout android:paddingLeft="10.0dip"
+		android:paddingRight="10.0dip" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1.0">
+		<LinearLayout android:gravity="center"
+			android:paddingTop="10.0dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1.0">
+			<LinearLayout android:gravity="center"
+				android:orientation="vertical" android:id="@+id/btn_add_note"
+				android:focusable="true" android:layout_width="92.0dip"
+				android:layout_height="118.0dip">
+				<ImageView android:paddingBottom="3.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/compass" android:onClick="onARNavigatorClick"/>
+				<LinearLayout android:gravity="center"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textAppearance="@style/desktop_name"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="AR Navigator" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:gravity="center"
+			android:paddingTop="10.0dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1.0">
+			<LinearLayout android:gravity="center"
+				android:orientation="vertical" android:id="@+id/btn_qa"
+				android:focusable="true" android:layout_width="92.0dip"
+				android:layout_height="118.0dip">
+				<ImageView android:paddingBottom="3.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/qrmode"  android:onClick="onQRModeClick" />
+				<LinearLayout android:gravity="center"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textAppearance="@style/desktop_name"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="QR Mode" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:paddingLeft="10.0dip"
+		android:paddingRight="10.0dip" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1.0">
+		<LinearLayout android:gravity="center"
+			android:paddingTop="10.0dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1.0">
+			<LinearLayout android:gravity="center"
+				android:orientation="vertical" android:id="@+id/CameraModeButton"
+				android:focusable="true" android:layout_width="92.0dip"
+				android:layout_height="118.0dip">
+				<ImageView android:paddingBottom="3.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/camera" android:onClick="onCameraModeClick"/>
+				<LinearLayout android:gravity="center"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textAppearance="@style/desktop_name"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="Camera" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:gravity="center"
+			android:paddingTop="10.0dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1.0">
+			<LinearLayout android:gravity="center"
+				android:orientation="vertical" android:id="@+id/btn_learninglog"
+				android:focusable="true" android:layout_width="92.0dip"
+				android:layout_height="118.0dip">
+				<ImageView android:paddingBottom="3.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/exit" android:onClick="onEXITClick"/>
+				<LinearLayout android:gravity="center"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textAppearance="@style/desktop_name"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="EXIT" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	
+ <LinearLayout android:paddingLeft="10.0dip"
+		android:paddingRight="10.0dip" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1.0">
+		<LinearLayout android:gravity="center"
+			android:paddingTop="10.0dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1.0">
+			<LinearLayout android:gravity="center"
+				android:orientation="vertical" android:id="@+id/btn_navigator"
+				android:focusable="true" android:layout_width="92.0dip"
+				android:layout_height="118.0dip">
+				<ImageView android:paddingBottom="3.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/navtask" android:onClick="onTaskModeClick"/>
+				<LinearLayout android:gravity="center"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textAppearance="@style/desktop_name"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="Task navigator" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+ 
+ </LinearLayout>
+ 
+    
+
+</LinearLayout>
+

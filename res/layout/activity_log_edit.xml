@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:fillViewport="true">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+		<LinearLayout style="@style/TitleBar">
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_home" android:src="@drawable/ic_title_home"
+				android:onClick="onHomeClick" />
+			<ImageView style="@style/TitleBarSeparator" />
+			<TextView style="@style/TitleBarText" />
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_question"
+				android:src="@drawable/ic_title_question" android:onClick="onQuestionClick" />
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_category"
+				android:src="@drawable/ic_title_category" android:onClick="onCatTagClick" />
+
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_attach" android:src="@drawable/ic_title_attach"
+				android:onClick="onAttachClick" />
+
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_setting"
+				android:src="@drawable/ic_title_setting" android:onClick="onSettingClick" />
+
+			<!-- <ImageView style="@style/TitleBarSeparator" /> <ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_camera" android:src="@drawable/ic_title_camera"
+				android:onClick="onCameraClick" /> <ImageView style="@style/TitleBarSeparator"
+				/> <ImageButton style="@style/TitleBarAction" android:contentDescription="@string/description_mic"
+				android:src="@drawable/ic_title_mic" android:onClick="onMicClick" /> -->
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/log_title_block"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="vertical">
+		</LinearLayout>
+
+		<EditText android:id="@+id/log_title_note"
+			android:layout_width="fill_parent" android:layout_height="0dip"
+			android:layout_weight="1" android:layout_margin="5dip"
+			android:hint="@string/log_edit_comment" android:freezesText="true"
+			android:gravity="top">
+		</EditText>
+
+	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/related_atach_block"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:baselineAligned="true"
+	    android:orientation="horizontal" >
+
+		<EditText android:id="@+id/txt_related_content"
+			android:layout_weight="1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textStyle="bold"
+			style="@style/TextBody"
+			android:layout_marginLeft="2dip" android:layout_marginRight="10dip"
+			android:layout_marginTop="5dip" android:layout_gravity="center_vertical" android:gravity="left|center_vertical" android:inputType="text"/>
+
+		<Button
+		    android:id="@+id/txt_related_name"
+		    style="@style/TextHeader"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical"
+		    android:layout_marginLeft="5dip"
+		    android:layout_marginRight="2dip"
+		    android:layout_marginTop="5dip"
+		    android:gravity="left"
+		    android:onClick="onRelatedClick"
+		    android:text="Relate"
+		    android:textStyle="bold"
+		    android:width="130dip" />
+
+	</LinearLayout>
+		<LinearLayout android:id="@+id/log_related_block"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_margin="5dip"
+			android:layout_gravity="center">
+			<ImageView android:id="@+id/log_attach"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:visibility="gone" />>
+
+			<LinearLayout android:id="@+id/log_relate_block"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" >
+
+				<TextView
+				    android:id="@+id/relate_text_view"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="Plese select Related words"
+				    android:visibility="gone" />
+
+			</LinearLayout>
+
+			<EditText
+			    android:id="@+id/txt_related_note"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:freezesText="true"
+			    android:gravity="top"
+			    android:hint="Input word" />
+
+			<LinearLayout 
+			    android:id="@+id/log_places_block"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" >
+			</LinearLayout>
+
+		</LinearLayout>
+	
+	
+		<LinearLayout android:id="@+id/log_attach_blcok"
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_margin="5dip"
+			android:layout_gravity="center">
+			<ImageView android:id="@+id/log_attach"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:visibility="gone" />
+
+			<EditText
+			    android:id="@+id/log_place_note"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			android:hint="@string/log_place_comment" android:freezesText="true"
+			android:gravity="top">
+			    
+			    
+			</EditText>
+
+		</LinearLayout>
+
+		<EditText
+		    android:id="@+id/log_place_comit"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:ems="10" android:visibility="gone">
+
+		    <requestFocus />
+		</EditText>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			style="@android:style/ButtonBar">
+			<Button android:layout_width="0dip" android:layout_height="wrap_content"
+				android:layout_weight="1" android:onClick="onSaveClick"
+				android:text="@string/log_edit_btn_save" />
+			<Button android:layout_width="0dip" android:layout_height="wrap_content"
+				android:layout_weight="1" android:onClick="onDiscardClick"
+				android:text="@string/log_edit_btn_discard" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

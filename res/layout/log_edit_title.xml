@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<Button android:id="@+id/txt_title_name"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:width="130dip"
+		android:textStyle="bold" android:gravity="left" style="@style/TextHeader"
+		android:layout_marginLeft="5dip" android:layout_marginRight="2dip"
+		android:layout_marginTop="5dip" android:layout_gravity="center_vertical"/>
+	<EditText android:id="@+id/txt_title_content"
+		android:layout_weight="1" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textStyle="bold"
+		style="@style/TextBody"
+		android:layout_marginLeft="2dip" android:layout_marginRight="10dip"
+		android:layout_marginTop="5dip" android:layout_gravity="center_vertical" android:gravity="left|center_vertical" android:inputType="text"/>
+</LinearLayout>

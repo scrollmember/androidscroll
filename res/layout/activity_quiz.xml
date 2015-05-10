@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        
+        <!-- poulsbo ActionBar -->
+        <LinearLayout style="@style/TitleBar" >
+
+            <ImageButton
+                style="@style/TitleBarAction"
+                android:contentDescription="@string/description_home"
+                android:onClick="onHomeClick"
+                android:src="@drawable/ic_title_home" />
+
+            <ImageView style="@style/TitleBarSeparator" />
+
+            <TextView style="@style/TitleBarText" />
+
+            <ImageView style="@style/TitleBarSeparator" />
+
+            <ImageButton
+                android:id="@+id/btn_title_map"
+                style="@style/TitleBarAction"
+                android:contentDescription="@string/description_map"
+                android:onClick="onMapClick"
+                android:src="@drawable/ic_title_map"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Quiz description and answer message -->
+        <LinearLayout
+            android:id="@+id/quiz_comment_block"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_icon_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txt_quiz_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_quiz_title"
+            style="@style/TextHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip" />
+
+        <!-- Quiz selector -->
+        <LinearLayout
+            android:id="@+id/quiz_choice_block"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <include layout="@layout/activity_quiz_choice" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quiz_yesno_block"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View
+                android:id="@+id/quiz_halving_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/black" />
+
+            <include layout="@layout/activity_log_detail_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quiz_btn_block"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="4" >
+
+            <Button
+                android:id="@+id/btn_quiz_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:onClick="onAnswerClick"
+                android:text="@string/quiz_answer_label" />
+
+            <Button
+                android:id="@+id/btn_quiz_easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:onClick="onPassClick"
+                android:text="@string/quiz_too_easy_label" />
+
+            <Button
+                android:id="@+id/btn_quiz_difficult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:onClick="onPassClick"
+                android:text="@string/quiz_too_difficult_label" />
+
+            <Button
+                android:id="@+id/btn_quiz_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="onPassClick"
+                android:text="@string/quiz_pass_label" />
+
+            <Button
+                android:id="@+id/btn_quiz_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="onMoreClick"
+                android:text="@string/quiz_more_label"
+                android:visibility="gone"
+                android:width="250dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quiz_no_info"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/info_empty_quiz"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</ScrollView>

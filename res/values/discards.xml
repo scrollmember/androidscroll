@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="toast_upload_invali_password">PicUpload: password is not correct</string>
+	<string name="toast_upload_formdata_empty">PicUpload: please input the title of the object</string>
+	<string name="toast_upload_failure">PicUpload: Upload Failure</string>
+	<string name="toast_title_blank">Please input at least one title</string>
+	<string name="toast_uploading">Uploading...</string>
+</resources>

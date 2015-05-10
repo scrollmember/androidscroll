@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="blue">#ff2285da</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="background">#ffeef4f7</color>
+    <color name="second_label">#ff8c8e8c</color>
+    <color name="name">#ff053174</color>
+    <color name="time">#ff6d6d6d</color>
+    <color name="content">#ff053174</color>
+    <color name="desktop_name_bg">#ff313131</color>
+    <color name="purple">#ff671c98</color>
+    <color name="push_color">#ffffffff</color>
+    <color name="navy_blue">#ff0c3f6a</color>
+    <color name="scrollbar_track">#fffcfcfc</color>
+    <color name="red">#ffff0000</color>
+    <color name="red1">#00ff0000</color>
+    <color name="selected_color">#ffcfcfe3</color>
+    <color name="gray">#ff888888</color>
+    <color name="number">#ff005eac</color>
+    <color name="trans">#00000000</color>
+    <color name="title_font">#ff2270c5</color>
+    <color name="item_bg">#00ecf5fd</color>
+    <color name="desktop_bg">#ffeef4f7</color>
+    <color name="search_friends_item">#ffe1f0fa</color>
+    <color name="search_friends_bg">#ffb8d4e8</color>
+    <color name="login_guide_text">#ff002a56</color>
+    <color name="tab_selected_text_color">#ff004783</color>
+    
+  	
+  	<color name="title_background">#ff355689</color>
+    <color name="title_text">#ffffffff</color>
+    <color name="title_text_alt">#ff000000</color>
+    <color name="foreground1">#ff355689</color>
+    <color name="foreground2">#ff7081a3</color>
+    <color name="background1">#ffffffff</color>
+    <color name="background2">#ffd5ddeb</color>
+    <color name="background3">#ffe3e8f1</color>
+    <color name="title_separator">#40ffffff</color>
+
+    <color name="session_foreground_past">#ff999999</color>
+
+    <color name="pinned_header_background">#ff202020</color>
+    
+    
+    
+    
+     <color name="contents_text">#ff000000</color>
+     <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+  <color name="help_view">#ff404040</color>
+  <color name="possible_result_points">#c0ffff00</color>
+  <color name="result_image_border">#ffffffff</color>
+  <color name="result_minor_text">#ffc0c0c0</color>
+  <color name="result_points">#c000ff00</color>
+  <color name="result_text">#ffffffff</color>
+  <color name="result_view">#b0000000</color>
+  <color name="sbc_header_text">#ff808080</color>
+  <color name="sbc_header_view">#ffffffff</color>
+  <color name="sbc_list_item">#fffff0e0</color>
+  <color name="sbc_layout_view">#ffffffff</color>
+  <color name="sbc_page_number_text">#ff000000</color>
+  <color name="sbc_snippet_text">#ff4b4b4b</color>
+  <color name="share_text">#ff000000</color>
+  <color name="status_view">#50000000</color>
+  <color name="status_text">#ffffffff</color>
+  <color name="transparent">#00000000</color>
+  <color name="viewfinder_frame">#ff000000</color>
+  <color name="viewfinder_laser">#ffff0000</color>
+  <color name="viewfinder_mask">#60000000</color>
+    
+</resources>

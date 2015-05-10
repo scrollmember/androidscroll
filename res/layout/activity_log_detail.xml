@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:fillViewport="true">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout style="@style/TitleBar">
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_home" android:src="@drawable/ic_title_home"
+				android:onClick="onHomeClick" />
+
+			<ImageView style="@style/TitleBarSeparator" />
+			<TextView style="@style/TitleBarText" />
+
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton android:id="@+id/btn_title_edit" style="@style/TitleBarAction"
+				android:contentDescription="@string/description_edit" android:src="@drawable/ic_title_edit"
+				android:onClick="onEditClick" android:visibility="gone"/>
+
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton android:id="@+id/btn_title_delete" style="@style/TitleBarAction"
+				android:contentDescription="@string/description_delete" android:src="@drawable/ic_title_delete"
+				android:onClick="onDeleteClick" android:visibility="gone"/>
+
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton android:id="@+id/btn_title_map" style="@style/TitleBarAction"
+				android:contentDescription="@string/description_map" android:src="@drawable/ic_title_map"
+				android:onClick="onMapClick" android:visibility="gone"/>
+
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_share" android:src="@drawable/ic_title_share"
+				android:onClick="onShareClick" android:visibility="gone"/>
+
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_search" android:src="@drawable/ic_title_search"
+				android:onClick="onSearchClick" android:visibility="gone"/>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/log_title_block"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		</LinearLayout>
+
+		<TextView android:id="@+id/log_author" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" style="@style/TextBody"
+			android:layout_marginBottom="5dp" android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp" />
+
+		<LinearLayout android:id="@+id/log_file_block"
+			android:orientation="vertical" android:layout_margin="10dp"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:visibility="gone">
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/log_map_block"
+			android:orientation="vertical" android:layout_margin="10dp"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:visibility="gone">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Map"
+				style="@style/TextHeader" />
+			<com.google.android.maps.MapView
+				xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:id="@+id/log_mapview"
+			    android:clickable="true"
+			    android:layout_height="wrap_content"
+			    android:layout_width="wrap_content"
+			    android:apiKey="0oBuwKtIY8l9_B-95ggQXtvA3pgnv79eD05P7oA"
+			/>
+		</LinearLayout>
+	
+		<LinearLayout android:id="@+id/log_attach_blcok"
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_margin="5dip"
+			android:layout_gravity="center" android:visibility="gone">
+			<ImageView android:id="@+id/log_attach"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:visibility="gone" />
+
+			<EditText
+			    android:id="@+id/log_place_note"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			android:hint="@string/log_place_comment" android:freezesText="true"
+			android:gravity="top">
+
+			    
+			</EditText>
+
+		</LinearLayout>
+		
+		<LinearLayout android:id="@+id/log_note_block"
+			android:orientation="vertical" android:paddingBottom="10dp"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:visibility="gone">
+			<TextView android:layout_width="fill_parent" android:layout_marginLeft="5dp"
+				android:layout_height="wrap_content" android:text="Description"
+				style="@style/TextHeader" />
+			<TextView android:id="@+id/log_note" android:layout_width="fill_parent"
+				android:layout_marginLeft="5dp" android:layout_height="wrap_content"
+				style="@style/TextBody" />
+		</LinearLayout>
+		
+		<LinearLayout android:id="@+id/log_related_block"
+			android:orientation="vertical" android:paddingBottom="10dp"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:visibility="gone">
+			<TextView android:layout_width="fill_parent" android:layout_marginLeft="5dp"
+				android:layout_height="wrap_content" android:text="Related words"
+				style="@style/TextHeader" />
+			<TextView android:id="@+id/log_relate" android:layout_width="fill_parent"
+				android:layout_marginLeft="5dp" android:layout_height="wrap_content"
+				style="@style/TextBody" />
+		</LinearLayout>
+		
+		<LinearLayout android:id="@+id/log_place_block"
+			android:orientation="vertical" android:paddingBottom="10dp"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:visibility="gone">
+			<TextView android:layout_width="fill_parent" android:layout_marginLeft="5dp"
+				android:layout_height="wrap_content" android:text="Place"
+				style="@style/TextHeader" />
+			<TextView android:id="@+id/log_place" android:layout_width="fill_parent"
+				android:layout_marginLeft="5dp" android:layout_height="wrap_content"
+				style="@style/TextBody" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/log_tag_block"
+			android:orientation="vertical" android:paddingBottom="10dp"
+			android:layout_marginRight="5dp" android:layout_marginLeft="5dp"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:visibility="gone">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Tags"
+				style="@style/TextHeader" />
+			<TextView android:id="@+id/log_tag" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" style="@style/TextBody"
+				android:layout_marginLeft="5dp" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/log_comments_block"
+			android:orientation="vertical" android:paddingBottom="10dp"
+			android:layout_marginRight="5dp" android:layout_marginLeft="5dp"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:visibility="gone">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Comments"
+				style="@style/TextHeader" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/log_question_block"
+			android:orientation="vertical" android:paddingBottom="10dp"
+			android:layout_marginRight="5dp" android:layout_marginLeft="5dp"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:visibility="gone">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Question"
+				style="@style/TextHeader" />
+		</LinearLayout>
+
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<Button
+ android:id="@+id/button"
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:text="@string/navbutton"
+ android:onClick="onGetCenter"
+ />
+
+<com.google.android.maps.MapView
+ android:id="@+id/mapview"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:enabled="true"
+ android:clickable="true"
+ android:apiKey="0DtPSTNmx51DPCUJCb8G7h_UYiwMG_kJYypUkKw"
+/>
+<ExpandableListView
+android:id="@+id/list"
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent"
+/>
+
+</LinearLayout>

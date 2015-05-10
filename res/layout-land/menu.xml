@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/desktop_main_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+		<LinearLayout style="@style/TitleBar">
+
+        <View style="@style/TitleBarSpring" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+            android:id="@+id/btn_title_refresh"
+            android:contentDescription="@string/description_refresh"
+            android:src="@drawable/ic_title_refresh"
+            android:onClick="onRefreshClick" />
+        <ProgressBar style="@style/TitleBarProgressIndicator"
+            android:id="@+id/title_refresh_progress"
+            android:visibility="gone" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_search"
+            android:src="@drawable/ic_title_search"
+            android:onClick="onSearchClick" />
+    </LinearLayout>
+	<LinearLayout android:paddingLeft="10.0dip"
+		android:paddingRight="10.0dip" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1.0">
+		<LinearLayout android:gravity="center"
+			android:paddingTop="10.0dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1.0">
+			<LinearLayout android:gravity="center"
+				android:orientation="vertical" android:id="@+id/btn_add_note"
+				android:focusable="true" android:layout_width="92.0dip"
+				android:layout_height="118.0dip">
+				<ImageView android:paddingBottom="3.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/note" android:onClick="onLogEditClick"/>
+				<LinearLayout android:gravity="center"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textAppearance="@style/desktop_name"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="Note" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:gravity="center"
+			android:paddingTop="10.0dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1.0">
+			<LinearLayout android:gravity="center"
+				android:orientation="vertical" android:id="@+id/btn_qa"
+				android:focusable="true" android:layout_width="92.0dip"
+				android:layout_height="118.0dip">
+				<ImageView android:paddingBottom="3.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/qa" />
+				<LinearLayout android:gravity="center"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textAppearance="@style/desktop_name"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="QA" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:gravity="center"
+			android:paddingTop="10.0dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1.0">
+			<LinearLayout android:gravity="center"
+				android:orientation="vertical" android:id="@+id/btn_quiz"
+				android:focusable="true" android:layout_width="92.0dip"
+				android:layout_height="118.0dip">
+				<ImageView android:paddingBottom="3.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/quiz"  android:onClick="onQuizClick"/>
+				<LinearLayout android:gravity="center"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textAppearance="@style/desktop_name"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="Quiz" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:paddingLeft="10.0dip"
+		android:paddingRight="10.0dip" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1.0">
+		<LinearLayout android:gravity="center"
+			android:paddingTop="10.0dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1.0">
+			<LinearLayout android:gravity="center"
+				android:orientation="vertical" android:id="@+id/btn_learninglog"
+				android:focusable="true" android:layout_width="92.0dip"
+				android:layout_height="118.0dip">
+				<ImageView android:paddingBottom="3.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/learninglog" />
+				<LinearLayout android:gravity="center"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textAppearance="@style/desktop_name"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="Logs" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:gravity="center"
+			android:paddingTop="10.0dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1.0">
+			<LinearLayout android:gravity="center"
+				android:orientation="vertical" android:id="@+id/btn_navigator"
+				android:focusable="true" android:layout_width="92.0dip"
+				android:layout_height="118.0dip">
+				<ImageView android:paddingBottom="3.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/navigator" />
+				<LinearLayout android:gravity="center"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textAppearance="@style/desktop_name"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="Navigator" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:gravity="center"
+			android:paddingTop="10.0dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1.0">
+			<LinearLayout android:gravity="center"
+				android:orientation="vertical" android:id="@+id/btn_helper"
+				android:focusable="true" android:layout_width="92.0dip"
+				android:layout_height="118.0dip">
+				<ImageView android:paddingBottom="3.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/manual" />
+				<LinearLayout android:gravity="center"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textAppearance="@style/desktop_name"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="Helper" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

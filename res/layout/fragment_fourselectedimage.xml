@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow>
+
+        <FrameLayout
+            android:id="@+id/clickable_select_one"
+            style="@style/CellStyle">
+
+            <ImageView
+                android:id="@+id/imageView_select_one"
+                style="@style/imageViewStyle"
+                 />
+
+            <ImageView
+                android:id="@+id/imageView_select_one_overlay"
+                style="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/clickable_select_two"
+            style="@style/CellStyle" >
+
+            <ImageView
+                android:id="@+id/imageView_select_two"
+                style="@style/imageViewStyle"
+                android:contentDescription="2nd Quiz choices"
+                />
+
+            <ImageView
+                android:id="@+id/imageView_select_two_overlay"
+                style="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow>
+
+        <FrameLayout
+            android:id="@+id/clickable_select_three"
+            style="@style/CellStyle" >
+
+            <ImageView
+                android:id="@+id/imageView_select_three"
+                style="@style/imageViewStyle"
+                android:contentDescription="3rd Quiz choices"
+                />
+
+            <ImageView
+                android:id="@+id/imageView_select_three_overlay"
+                style="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/clickable_select_four"
+            style="@style/CellStyle" >
+
+            <ImageView
+                android:id="@+id/imageView_select_four"
+                style="@style/imageViewStyle"
+                android:contentDescription="4th Quiz choices"
+                />
+
+            <ImageView
+                android:id="@+id/imageView_select_four_overlay"
+                style="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </TableRow>
+
+</TableLayout>

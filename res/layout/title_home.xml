@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" style="@style/TitleBar">
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_home" android:src="@drawable/ic_title_home"
+				android:onClick="onHomeClick" />
+			<ImageView style="@style/TitleBarSeparator"  />
+			<TextView style="@style/TitleBarText" />
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_question"
+				android:src="@drawable/ic_title_question" android:onClick="onQuestionClick" />
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_category"
+				android:src="@drawable/ic_title_category" android:onClick="onCatTagClick" />
+
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_attach" android:src="@drawable/ic_title_attach"
+				android:onClick="onAttachClick" />
+
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_setting"
+				android:src="@drawable/ic_title_setting" android:onClick="onSettingClick" />
+
+			<!-- <ImageView style="@style/TitleBarSeparator" /> <ImageButton style="@style/TitleBarAction"
+				android:contentDescription="@string/description_camera" android:src="@drawable/ic_title_camera"
+				android:onClick="onCameraClick" /> <ImageView style="@style/TitleBarSeparator"
+				/> <ImageButton style="@style/TitleBarAction" android:contentDescription="@string/description_mic"
+				android:src="@drawable/ic_title_mic" android:onClick="onMicClick" /> -->
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<SurfaceView android:id="@+id/surface_camera"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+	</SurfaceView>
+
+	<RelativeLayout android:id="@+id/videoRecordButtons"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:id="@+id/txtRecordingState"
+			android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip" android:layout_marginTop="10dip"
+			android:textSize="24dip" android:text="@string/info_video_record_stop"/>
+		<Chronometer android:id="@+id/chrono_time"
+			android:layout_alignParentTop="true" android:layout_toRightOf="@id/txtRecordingState"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip" android:layout_marginTop="10dip"
+			android:textSize="24dip" />
+		<ImageButton android:id="@+id/videoRecordStartButton"
+			android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/mr_record"
+			android:layout_marginRight="15dip" />
+		<ImageButton android:id="@+id/videoRecordStopButton"
+			android:layout_toRightOf="@id/videoRecordStartButton"
+			android:layout_alignParentBottom="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/mr_stop"
+			android:layout_marginLeft="15dip" />
+	</RelativeLayout>
+</FrameLayout>

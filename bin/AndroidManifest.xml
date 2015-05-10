@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.ac.tokushima_u.is.ll"
+    android:versionCode="29"
+    android:versionName="2.8" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COSRSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <!-- required for accessing the device ID -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Cloud to Device Messaging permissions -->
+    <permission
+        android:name="jp.ac.tokushima_u.is.ll.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="jp.ac.tokushima_u.is.ll.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-sdk android:minSdkVersion="8" />
+    <!-- android:targetSdkVersion="15"を書き加えると、ActionBarSherlockでめんどくさいことになるのでやめてね -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/favicon"
+        android:label="@string/app_name" >
+
+        <!-- wrote by Michiue(B4) 2011 4 20 -->
+        <uses-library android:name="com.google.android.maps" />
+
+        <receiver android:name=".ui.nav.Request" />
+        <receiver
+            android:name=".MyBroadcastReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- navigator -->
+        <activity
+            android:name=".ui.nav.nav"
+            android:label="@string/nav_app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.nav.ObjectNavdata"
+            android:label="@string/nav_app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ui.nav.ARNavigator"
+            android:label="@string/nav_app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ui.nav.CameraNav"
+            android:label="@string/nav_app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ui.nav.LightNav"
+            android:label="@string/nav_app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ui.nav.radar"
+            android:label="@string/nav_app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ui.nav.Map"
+            android:label="@string/nav_app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ui.nav.LLMap"
+            android:label="@string/lab_LLMap" />
+        <activity
+            android:name=".ui.nav.navi"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.nav.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.nav.Changenavi"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.nav.qr.qr_codeMain"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ui.navTask.navTask_view"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.navTask.Task_main"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ui.navTask.CameraTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ui.navTask.Taskscript_select"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.navTask.task_screen"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.navTask.TestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.navTaskselect.TaskscriptselectHttp"
+            android:noHistory="true"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".service.TaskSyncService"
+            android:noHistory="true"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.navTask.ChangeTaskscript_select"
+            android:noHistory="true"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.navTaskselect.ChangeTaskscript_select2"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.navTaskselect.RelatedItemHttp"
+            android:noHistory="true"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.navTaskselect.TaskClearScreen"
+            android:noHistory="true"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.nav.examination.ExaminationScreen"
+            android:noHistory="true"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.navTask.taskandtaskscript"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.navTaskselect.TaskNavigator"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <!-- end navigator -->
+        <!--
+             <activity android:name=".media.AddMediaNoteActivity" android:configChanges="orientation">
+			<intent-filter> <action android:name="android.intent.action.SEND" /> <category
+			android:name="android.intent.category.DEFAULT" /> <category android:name="android.intent.category.ALTERNATIVE"/>
+			<data android:mimeType="image/jpeg" /> <data android:mimeType="video/3gpp"
+			/> </intent-filter> </activity>
+        -->
+
+        <activity
+            android:name=".ui.HomeActivity"
+            android:theme="@style/Theme.IOSched" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- wrote by Michiue(B4) 2011 4 20 -->
+        <activity
+            android:name=".ui.MapTestActivity"
+            android:theme="@style/Theme.IOSched" />
+        <activity
+            android:name=".ui.PreferencesSetting"
+            android:label="@string/preference_title" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="Log in"
+            android:launchMode="singleTask"
+            android:noHistory="true" />
+        <activity
+            android:name=".ui.AlarmActivity"
+            android:label="Alarm"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".ui.LogListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Theme.IOSched" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+
+                <data android:mimeType="vnd.android.cursor.dir/vnd.learninglog.item" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".ui.LogListActivity" />
+
+        <activity
+            android:name=".ui.LogsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.ViewLogActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Theme.IOSched" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.learninglog.item" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.NewLogActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Theme.IOSched" >
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/vnd.learninglog.item" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.learninglog.item" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.ALTERNATIVE" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+                <data android:pathPattern="vnd.android.cursor.dir/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.FourSelectedTextQuizActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.YesNoQuizActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity
+            android:name=".ui.QuizActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:noHistory="true"
+            android:theme="@style/Theme.IOSched" >
+        </activity>
+        <activity android:name=".ui.media.ShowPhoto" />
+        <activity android:name=".ui.media.AudioPlayer" />
+        <activity android:name=".ui.media.VideoPlayer" />
+        <activity
+            android:name=".ui.media.AudioRecorder"
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name=".ui.quiz.FourSelectedImageQuizAnswer"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ui.quiz.ImagePreviewActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".ui.quiz.FourSelectedImageQuiz"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".sphinx.MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".sphinx.QuizCreatorList"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".sphinx.SearchActivity"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".sphinx.NfcCallingBranch"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/jp.ac.tokushima_u.is.ll.sphinx" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".sphinx.quiz.v2.FourSelectedImageQuiz"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".sphinx.quiz.v2.ImagePreviewActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name=".service.TaskSyncService"
+            android:enabled="true" />
+        <service
+            android:name=".service.TaskscriptSyncService"
+            android:enabled="true" />
+        <service
+            android:name=".service.SyncService"
+            android:enabled="true" />
+        <service
+            android:name=".service.BackgroundService"
+            android:enabled="true" />
+        <service
+            android:name=".service.ContextAwareService"
+            android:enabled="true" />
+        <service
+            android:name=".service.RandomContextAwareService"
+            android:enabled="true" />
+        <service
+            android:name=".service.TTSService"
+            android:enabled="true" />
+
+        <receiver android:name=".AlarmReceiver" />
+
+        <provider
+            android:name=".provider.LearningLogProvider"
+            android:authorities="jp.ac.tokushima_u.is.ll"
+            android:writePermission="jp.ac.tokushima_u.is.ll.WRITE_PERMISSION" />
+
+        <!--
+             In order to use the c2dm library, an application must declare a class
+			with the name C2DMReceiver, in its own package, extending com.google.android.c2dm.C2DMBaseReceiver
+        -->
+        <service android:name=".c2dm.C2DMReceiver" />
+
+        <!--
+             Only Google services can send messages to the app. If this permission
+			weren't set any other app would be able to send messages to us.
+        -->
+        <receiver
+            android:name="com.google.android.c2dm.C2DMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+
+            <!-- Receive actual messages -->
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="jp.ac.tokushima_u.is.ll" />
+            </intent-filter>
+            <!-- Receive registration ids -->
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="jp.ac.tokushima_u.is.ll" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

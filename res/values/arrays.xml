@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<array name="Timer">
+<item> @string/Fast_Timer_Photo</item>
+<item> @string/Short_Timer_Photo</item>
+<item> @string/Late_Timer_Photo</item>
+</array>
+<array name="share_level">
+	<item>@string/item_share_public</item>
+	<item>@string/item_share_private</item>
+</array>
+<array name="questiontypes">
+	<item>English</item>
+	<item>Japanese</item>
+	<item>Chinese</item>
+</array>
+<array name="item_options">
+	<item>Share Object</item>
+	<item>Location Based Object</item>
+	<item>Text-based Multiple Choice</item>
+	<item>Multimedia-based Multiple Choice </item>
+	<item>Yes/No Question</item>
+</array>
+</resources>

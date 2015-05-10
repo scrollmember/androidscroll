@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+          <!--  <EditText
+                android:id="@+id/comment"
+                android:layout_width="fill_parent"
+                android:layout_height="200dip"
+                android:background="#ffefd5"
+                android:ems="10"
+                android:freezesText="true"
+                android:gravity="top" >
+            </EditText> --> 
+            <EditText android:id="@+id/comment"
+			android:layout_width="fill_parent" android:layout_height="200dip"
+			android:layout_weight="1" android:layout_margin="5dip"
+			android:hint="Your comment and Question and Description" android:freezesText="true"
+			android:gravity="top">
+		</EditText>
+        </LinearLayout>
+</LinearLayout>

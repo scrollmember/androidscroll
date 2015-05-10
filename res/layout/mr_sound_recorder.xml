@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:layout_gravity="center">
+	<TextView
+		android:id="@+id/txt_time_prefix"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="40dip"
+		android:gravity="center_horizontal"
+		android:textSize="30dip" />
+	<Chronometer
+		android:id="@+id/chrono_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="40dip"
+		android:gravity="center_horizontal"
+		android:textSize="30dip" />
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center_horizontal">
+		<ImageButton
+			android:id="@+id/btn_sound_record_start"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/mr_record"
+			android:layout_marginRight="15dip" />
+		<ImageButton
+			android:id="@+id/btn_sound_record_stop"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/mr_stop"
+			android:layout_marginLeft="15dip" />
+	</LinearLayout>
+</LinearLayout>

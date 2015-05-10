@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="audio_file_path">/sdcard/learninglog/audio/</string>
+<string name="cache_image_path">/sdcard/learninglog/cache/image/</string>
+<string name="cache_audio_path">/sdcard/learninglog/cache/audio/</string>
+<string name="cache_path">/sdcard/learninglog/cache/</string>
+
+<!-- getExternalCacheDir()を組み合わせて使う -->
+<string name="audio_file_external_path">/recorded/</string>
+<string name="cache_image_external_path">/image/</string>
+<string name="cache_audio_external_path">/audio/</string>
+
+</resources>
